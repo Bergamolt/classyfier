@@ -1,0 +1,26 @@
+{
+  "name": "classyfier",
+  "version": "1.0.0",
+  "description": "A lightweight utility for building class names.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "keywords": [
+    "classnames",
+    "utility",
+    "css",
+    "styles"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bergamolt/classyfier.git"
+  },
+  "author": "Your Name",
+  "bugs": {
+    "url": "https://github.com/Bergamolt/classyfier/issues"
+  },
+  "homepage": "https://github.com/Bergamolt/classyfier",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
