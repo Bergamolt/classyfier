@@ -1,17 +1,17 @@
-export default function classyfier(...args) {
-  return args
-    .flat(Infinity)
-    .reduce((classes, className) => {
-      if (className && typeof className !== 'boolean') {
-        if (typeof className === 'object' && className !== null) {
-          for (const [key, value] of Object.entries(className)) {
-            if (value) classes.push(key)
-          }
-        } else {
-          classes.push(className)
-        }
-      }
-      return classes
-    }, [])
+export function classyfier(...a) {
+  return a
+    .flat(9)
+    .reduce(
+      (a, b) =>
+        b && typeof b != 'boolean'
+          ? (typeof b == 'object' && b != null
+              ? Object.entries(b).forEach(([c, d]) => d && a.push(c))
+              : a.push(b),
+            a)
+          : a,
+      []
+    )
     .join(' ')
 }
+
+export default classyfier

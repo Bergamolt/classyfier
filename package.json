@@ -1,12 +1,17 @@
 {
   "name": "classyfier",
-  "version": "1.0.2",
-  "description": "A lightweight utility for building class names.",
+  "version": "1.0.6",
+  "description": "A lightweight JavaScript utility for conditionally joining class names together, taking up only 180 bytes.",
   "scripts": {
-    "build": "rollup -c"
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest"
   },
-  "main": "./lib/index.js",
+  "module": "dist/index.m.js",
+  "main": "dist/index.js",
   "types": "index.d.ts",
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
   "keywords": [
     "classnames",
     "utility",
@@ -25,9 +30,8 @@
   "homepage": "https://github.com/Bergamolt/classyfier",
   "devDependencies": {
     "jest": "^29.5.0",
-    "rollup": "^2.79.1",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-terser": "^7.0.2"
+    "esm": "3.2.25",
+    "terser": "4.8.0",
+    "uvu": "0.5.4"
   }
 }

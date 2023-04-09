@@ -1,6 +1,6 @@
 # classyfier
 
-A lightweight JavaScript utility for conditionally joining class names together.
+A lightweight JavaScript utility for conditionally joining class names together, taking up only 180 bytes.
 
 ## Installation
 
