@@ -2,4 +2,4 @@
 .gitignore
 package-lock.json
 index.js
-bin.js
+build.js
