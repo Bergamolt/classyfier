@@ -1,4 +1,4 @@
-import classyfier from '../index.js'
+const classyfier = require('../dist/index.js')
 
 describe('classyfier', () => {
   test('should return a single class name as a string', () => {
