@@ -4,10 +4,9 @@ export default function classyfier(...args) {
     .reduce((classes, className) => {
       if (className && typeof className !== 'boolean') {
         if (typeof className === 'object' && className !== null) {
-          console.log(className)
-          Object.entries(className).forEach(([key, value]) => {
+          for (const [key, value] of Object.entries(className)) {
             if (value) classes.push(key)
-          })
+          }
         } else {
           classes.push(className)
         }
